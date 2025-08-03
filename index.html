@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>🚀 Регистрация</h2>
+    <input type="text" id="name" placeholder="Ваше имя" required />
+    <input type="number" id="age" placeholder="Ваш возраст" required />
+    <button onclick="submitForm()">Отправить</button>
+  </div>
+
+  <script>
+    function submitForm() {
+      const name = document.getElementById("name").value.trim();
+      const age = document.getElementById("age").value.trim();
+
+      if (!name || !age) {
+        alert("Пожалуйста, заполните все поля!");
+        return;
+      }
+
+      Telegram.WebApp.sendData(JSON.stringify({ name, age }));
+      Telegram.WebApp.close();
+    }
+
+    Telegram.WebApp.expand();
+  </script>
+</body>
+</html>

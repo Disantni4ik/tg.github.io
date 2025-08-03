@@ -6,7 +6,9 @@ window.addEventListener("DOMContentLoaded", () => {
     tg.ready();
 
     document.getElementById("continueBtn").addEventListener("click", () => {
-      tg.sendData("start");
+      print("continueBtn clicked");
+      document.getElementById("form").style.display = "block";
+      document.getElementById("start").style.display = "none";
     });
   } else {
     console.warn("WebApp не запущено в Telegram.");

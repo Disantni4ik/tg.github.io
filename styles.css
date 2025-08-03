@@ -1,59 +1,61 @@
 body {
-  margin: 0;
+  width: 500px;
+  height: auto;
+
+  margin: 0 auto;
   font-family: 'Segoe UI', sans-serif;
-  background-color: rgb(36, 36, 39);
 }
 
-.ico img {
-    width: 6rem;
-    height: 6rem;
+.container {
+    background: linear-gradient(to top, #0e0e0e, #222222);
+    padding-bottom: 2rem;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.start img {
+    width: 5rem;
+    height: 5rem;
 
     border-radius: 25%;
-    
-    transform: translateX(-50%);
-    margin-left: 50%;
     margin-top: 6rem;
     margin-bottom: 4rem;
 
 }
 
-.text {
-    color: white;
-    font-size: 1rem;
-    margin-bottom: 20px;
+.start h2, .start h5 {
     text-align: center;
-}
-
-.text h2, .text h5 {
     margin: 0;
 }
 
-.text h5 {
-    font-weight:normal;
-    font-size: 1.2rem;
-    color: #989898;
+.start h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
-input {
-  width: 90%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+.start h5 {
+    color: rgb(115, 115, 115);
+    font-size: 0.6rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
 }
 
 .start button {
-  padding: 1.35rem 9rem;
+  margin-top: 2rem;
+  padding: 0.4rem 3.5rem;
   font-size: 16px;
+  font-weight: bold;
   background-color: rgb(0, 91, 211);
   color: white;
-  position: relative;
-  top: 5rem;
-  left: 50%;
-  transform: translateX(-50%);
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   cursor: pointer;
   box-shadow: 0 0 1rem rgba(0, 91, 211, 0.589);
   transition: 0.2s ease-in-out;
@@ -65,8 +67,11 @@ button span {
     font-weight: bold;
 }
 
-button:hover {
-  top: 5.6rem;
+button:hover { 
   box-shadow: 0 0.3rem 1.5rem rgba(0, 91, 211, 0.589);
+  transform: translateY(-0.2rem);
+}
 
+.form {
+  display: none;
 }

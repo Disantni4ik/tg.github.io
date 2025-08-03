@@ -76,5 +76,6 @@ button span {
 }
 
 button:hover {
-  background-color: #1e75c6;
+  top: 5.6rem;
+  box-shadow: 0 0.3rem 1.5rem rgba(0, 91, 211, 0.589);
 }

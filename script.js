@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     tg.ready();
 
     console.log(window.Telegram.viewportWidth);
-    document.getElementById("main").style.width = tg.viewportWidth + "px";
+    document.getElementById("width").textContent = tg.viewportWidth  + "px";
 
     // document.getElementById("continueBtn").addEventListener("click", () => {
     //   console.log("continueBtn clicked");

@@ -59,10 +59,10 @@ body {
       background-color: #1976d2;
       color: white;
       border: none;
-      padding: 14px 0; /* только вертикальные отступы */
-      width: 290px; /* ширина кнопки */
+      padding: 1.2rem 0;
+      width: 290px;
       border-radius: 12px;
-      font-size: 10px;
+      font-size: 1rem;
       font-weight: 650;
       font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       cursor: pointer;

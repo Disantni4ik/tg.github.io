@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
     tg.expand();
     tg.ready();
 
-    document.getElementById("width").textContent = width + px;
+    document.getElementById("width").textContent = width + "px";
 
     // document.getElementById("continueBtn").addEventListener("click", () => {
     //   console.log("continueBtn clicked");

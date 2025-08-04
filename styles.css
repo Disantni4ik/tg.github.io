@@ -1,77 +1,86 @@
 body {
-  width: 400px;
-  height: auto;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e1e;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
 
-  margin: 0 auto;
-  font-family: 'Segoe UI', sans-serif;
-}
+    .logo {
+      margin-top: 201px;
+      width: 80px;
+      height: 80px;
+      background-color: #343438;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.container {
-    background: linear-gradient(to top, #0e0e0e, #222222);
-    padding-bottom: 2rem;
-}
+    .logo img {
+      width: 30px;
+      height: 30px;
+    }
 
-.start {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-}
+    .text {
+      margin-top: auto;
+      font-weight: 600;
+      margin-bottom: 199px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.start img {
-    width: 5rem;
-    height: 5rem;
+    h1 {
+      margin: 20px 0 0 0;
+      font-size: 24px;
+      text-align: center;
+    }
 
-    border-radius: 25%;
-    margin-top: 6rem;
-    margin-bottom: 4rem;
+    p {
+      margin: 10px 0 0 0;
+      font-size: 14px;
+      color: #aaaaaa;
+      text-align: center;
+    }
 
-}
+    .button-wrapper {
+      position: fixed;
+      bottom: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
 
-.start h2, .start h5 {
-    text-align: center;
-    margin: 0;
-}
+    .button {
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      padding: 14px 0; /* только вертикальные отступы */
+      width: 290px; /* ширина кнопки */
+      border-radius: 12px;
+      font-size: 10px;
+      font-weight: 650;
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(25, 118, 210, 0.5);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-.start h2 {
-    color: white;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 15px rgba(25, 118, 210, 0.7);
+    }
 
-.start h5 {
-    color: rgb(115, 115, 115);
-    font-size: 0.6rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
-}
-
-.start button {
-  margin-top: 2rem;
-  padding: 0.4rem 3.5rem;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: rgb(0, 91, 211);
-  color: white;
-  border: none;
-  border-radius: 0.6rem;
-  cursor: pointer;
-  box-shadow: 0 0 1rem rgba(0, 91, 211, 0.589);
-  transition: 0.2s ease-in-out;
-}
-
-button span {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-button:hover { 
-  box-shadow: 0 0.3rem 1.5rem rgba(0, 91, 211, 0.589);
-  transform: translateY(-0.2rem);
-}
-
-.form {
-  display: none;
-}
+    .footer {
+      position: fixed;
+      bottom: 20px;
+      font-size: 14px;
+      color: #888;
+      width: 100%;
+      text-align: center;
+    }

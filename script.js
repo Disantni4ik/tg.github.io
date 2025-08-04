@@ -5,11 +5,14 @@ window.addEventListener("DOMContentLoaded", () => {
     tg.expand();
     tg.ready();
 
-    document.getElementById("continueBtn").addEventListener("click", () => {
-      print("continueBtn clicked");
-      document.getElementById("form").style.display = "block";
-      document.getElementById("start").style.display = "none";
-    });
+    console.log(window.Telegram.viewportWidth);
+    document.getElementById("main").style.width = tg.viewportWidth + "px";
+
+    // document.getElementById("continueBtn").addEventListener("click", () => {
+    //   console.log("continueBtn clicked");
+    //   document.getElementById("form").style.display = "block";
+    //   document.getElementById("start").style.display = "none";
+    // });
   } else {
     console.warn("WebApp не запущено в Telegram.");
   }

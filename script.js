@@ -1,12 +1,12 @@
 window.addEventListener("DOMContentLoaded", () => {
   const tg = window.Telegram.WebApp;
+  const width = window.Telegram.WebApp.viewportWidth;
 
   if (tg) {
     tg.expand();
     tg.ready();
 
-    console.log(window.Telegram.viewportWidth);
-    document.getElementById("width").textContent = tg.viewportWidth  + "px";
+    document.getElementById("width").textContent = width;
 
     // document.getElementById("continueBtn").addEventListener("click", () => {
     //   console.log("continueBtn clicked");

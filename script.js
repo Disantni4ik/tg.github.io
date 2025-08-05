@@ -30,3 +30,19 @@ copyButton.addEventListener('click', () => {
         console.error('Помилка копіювання: ', err);
       });
     });
+
+const tg = window.Telegram.WebApp;
+
+  document.getElementById("registration-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const data = {
+      username: document.getElementById("username").value,
+      email: document.getElementById("email").value,
+      password: document.getElementById("password").value
+    };
+
+    tg.sendData(JSON.stringify(data));
+
+    tg.close();
+  });

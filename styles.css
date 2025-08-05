@@ -4,6 +4,7 @@ body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to bottom right, #1e1e1e, #121212);
       color: white;
+      height: 100vh;
     }
 
     .start {
@@ -118,7 +119,7 @@ body {
 }
 
 .registration-form {
-  width: 300px;
+  width: 250px;
   margin: 1rem auto;
   padding: 20px;
   border-radius: 10px;
@@ -137,6 +138,7 @@ body {
   border-radius: 5px;
   background-color: #1e1e1e;
   color: white;
+  transition: box-shadow 0.1s ease;
 }
 
 .registration-form input::placeholder {
@@ -150,13 +152,13 @@ body {
 
 .registration-form button {
   margin-top: 10px;
-  width: 90%;
+  width: 70%;
   padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #1976d2;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;

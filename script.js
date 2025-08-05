@@ -17,6 +17,7 @@ continueBtn.addEventListener("click", () => {
 const tg = window.Telegram.WebApp;
 
   document.getElementById("registration-form").addEventListener("submit", function (e) {
+    consolel.log("Form submitted");
     e.preventDefault();
 
     const data = {

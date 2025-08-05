@@ -1,9 +1,9 @@
 body {
       margin: 0;
+      box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to bottom right, #1e1e1e, #121212);
       color: white;
-      height: 100vh;
     }
 
     .start {
@@ -52,20 +52,6 @@ body {
       color: #aaaaaa;
       text-align: center;
     }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
     .button-wrapper {
       position:fixed;
@@ -122,105 +108,60 @@ li {
   will-change: opacity, transform;
 }
 
-.step span {
-  color: #1976d2;
-  font-size: 1.1rem;
-  font-weight:bolder;
-}
-
-.step h3 {
-  margin: 0.1rem 0 0.8rem 0;
-  font-size: 0.8rem;
-}
-
-.step .img-wrapper {
-  margin-top: 1rem;
-  border-radius: 15px;
-  background: #202022;
-  box-shadow: 0 0 1rem #202022;
-  width: 100%;
-  height: 13rem;
+.registration {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.registration-form {
+  width: 60%;
+  margin: 1rem auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  background-color: #131314;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.step p {
-  margin: 0;
-  text-align:left;
-  font-size: 0.7rem;
+.registration-form input {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.registration-form input::placeholder {
   color: #aaaaaa;
 }
 
-.step {
-  padding: 1.4rem 1.2rem;
-  background-color: #2f2f2f;
-  box-shadow: 0 0 2px rgb(130, 130, 130);
-  width: 16rem;
-  height: auto;
-  border-radius: 20px;
+.registration-form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-.copy-button {
-  margin-top: 1rem;
+.registration-form button {
+  margin-top: 10px;
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
   background-color: #1976d2;
   color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.8rem;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.allows-check-button-wrapper {
-  background: #202022;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.allows-check-button {
-  display: sticky;
-  background-color: #1976d2;
-  color: white;
-  border: none;
-  padding: 1.5rem 8rem;
-  border-radius: 15px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.allows-check-button:hover {
+.registration-form button:hover {
+  transform: translateY(-3px);
   box-shadow: 0 0 15px rgba(25, 118, 210, 0.7);
-  transform: translateY(-2px);
-}
-
-.copy-button:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 0 15px rgba(25, 118, 210, 0.7);
-}
-
-.copy-message {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  background-color: rgba(25, 118, 210, 0.9);
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 10px;
-  font-size: 0.9rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  z-index: 9999;
-}
-
-.copy-message.show {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
 }

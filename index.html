@@ -24,61 +24,22 @@
   </div>
 
   <div style="display: none;" id="registration" class="registration hidden">
-    <h1 style="margin-bottom: 2rem;">Вижу вы у нас впервые!</h1>
-    <p>Для начала регистрации, без неё не обойтись!<br>Следуйте за инструкциями, а затем нажмите<br>кнопку "Проверить"</p>
+    <h1 style="margin: 0 0 1rem 0; padding-top: 10rem;">Вижу вы у нас впервые!</h1>
+    <p>Для начала зарегистрируйтесь</p>
 
-    <ul>
-      <li>
-        <div class="step">
-          <span>Шаг 1:</span>
-          <h3>Откройте настройки бизнеса</h3>
-          <p>Зайдите в настройки -> Telegram для<br>бизнеса.</p>
-          <div class="img-wrapper">
-            <img src="" alt="step1">
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="step">
-          <span>Шаг 2:</span>
-          <h3>Найдите раздел чат-ботов</h3>
-          <p>В меню бизнес-функций выбирите Чат-боты.</p>
-          <div class="img-wrapper">
-            <img src="" alt="step2">
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="step">
-          <span>Шаг 3:</span>
-          <h3>Подключите нашего бота</h3>
-          <p>В поле имени бота введите (нажмите, чтобы<br>скопировать):</p>
-          <button class="copy-button">@NFTLine</button>
-          <div class="img-wrapper">
-            <img src="" alt="step3">
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="step">
-          <span>Шаг 4:</span>
-          <h3>Откройте настройки бизнеса</h3>
-          <p>Зайдите в настройки -> Telegram для<br>бизнеса.</p>
-          <div class="img-wrapper">
-            <img src="" alt="step4">
-          </div>
-        </div>
-      </li>
-    </ul>
-
-    <footer>
-      <div class="allows-check-button-wrapper">
-        <button class="allows-check-button">Проверить</button>
-      </div>
-    </footer>
+    <form id="registration-form" class="registration-form">
+      <input type="text" id="username" placeholder="Введите имя пользователя" required />
+      <input type="email" id="email" placeholder="Введите email" required />
+      <input type="password" id="password" placeholder="Введите пароль" required />
+      <button type="submit">Зарегистрироваться</button>
+    </form>
   </div>
 
-  <div id="copyMessage" class="copy-message">Copied</div>
+
+
+
+
+
   <script src="script.js"></script>
 </body>
 </html>

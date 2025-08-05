@@ -14,23 +14,6 @@ continueBtn.addEventListener("click", () => {
     }, 300);
   });
 
-const copyButton = document.querySelector('.copy-button');
-const message = document.getElementById('copyMessage');
-
-copyButton.addEventListener('click', () => {
-      const textToCopy = copyButton.textContent.trim();
-
-      navigator.clipboard.writeText(textToCopy).then(() => {
-        message.classList.add('show');
-
-        setTimeout(() => {
-          message.classList.remove('show');
-        }, 2000);
-      }).catch(err => {
-        console.error('Помилка копіювання: ', err);
-      });
-    });
-
 const tg = window.Telegram.WebApp;
 
   document.getElementById("registration-form").addEventListener("submit", function (e) {

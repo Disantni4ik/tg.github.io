@@ -1,32 +1,38 @@
-const continueBtn = document.getElementById("continue1");
-const start = document.getElementById("start");
-const registration = document.getElementById("registration");
+window.addEventListener("DOMContentLoaded", () => {
+  const tg = window.Telegram.WebApp;
 
-continueBtn.addEventListener("click", () => {
-    registration.style.display = "block";
-    start.classList.add("hidden");
-    start.classList.remove("visible");
+  if (tg) {
+    tg.expand();
+    tg.ready();
 
-    setTimeout(() => {
-      start.style.display = "none";
-      registration.classList.remove("hidden");
-      registration.classList.add("visible");
-    }, 300);
-  });
+    const continueBtn = document.getElementById("continue1");
+    const start = document.getElementById("start");
+    const registration = document.getElementById("registration");
 
-const tg = window.Telegram.WebApp;
+    continueBtn.addEventListener("click", () => {
+      registration.style.display = "block";
+      start.classList.add("hidden");
+      start.classList.remove("visible");
 
-  document.getElementById("registration-form").addEventListener("submit", function (e) {
-    consolel.log("Form submitted");
-    e.preventDefault();
+      setTimeout(() => {
+        start.style.display = "none";
+        registration.classList.remove("hidden");
+        registration.classList.add("visible");
+      }, 300);
+    });
 
-    const data = {
-      username: document.getElementById("username").value,
-      email: document.getElementById("email").value,
-      password: document.getElementById("password").value
-    };
+    document.getElementById("registration-form").addEventListener("submit", function (e) {
+      console.log("Form submitted");
+      e.preventDefault();
 
-    tg.sendData(JSON.stringify(data));
+      const data = {
+        username: document.getElementById("username").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value
+      };
 
-    tg.close();
-  });
+      tg.sendData(JSON.stringify(data));
+      tg.close();
+    });
+  }
+});
